@@ -69,3 +69,25 @@ Code used:
 > `AND year = 2010`
 
 > `ORDER BY population DESC;`
+
+## 5. How many countries in this dataset have the word “Islands” in their name?
+There are 9 countries in this dataset that have the word "Islands" in their name:
+
+1. Cayman Islands
+2. Cook Islands
+3. Falkland Islands (Islas Malvinas)
+4. Faroe Islands
+5. Solomon Islands
+6. Turks and Caicos Islands
+7. U.S. Pacific Islands
+8. Virgin Islands,  U.S.
+9. Virgin Islands, British
+
+Code used:
+>`SELECT DISTINCT country`
+
+>`FROM population_years`
+
+>`WHERE country LIKE '%Islands%'`
+
+>`ORDER BY country ASC;`
