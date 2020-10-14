@@ -42,3 +42,30 @@ Code used:
 > `ORDER BY population ASC`
 
 > `LIMIT 10;`
+
+## 4. What are all the distinct countries with a population of over 100 million in the year 2010?
+In 2010, the countries with a population of over 100 million were:
+Country | Population (millions)
+--- | ---
+China | 1330.14129
+India | 1173.10802
+United States | 310.23286
+Indonesia | 242.96834
+Brazil | 201.10333
+Pakistan | 184.40479
+Bangladesh | 156.11846
+Nigeria | 152.21734
+Russia | 139.39021
+Japan | 126.80443
+Mexico | 112.46886
+
+Code used:
+> `SELECT DISTINCT country, population`
+
+> `FROM population_years`
+
+> `WHERE population > 100`
+
+> `AND year = 2010`
+
+> `ORDER BY population DESC;`
