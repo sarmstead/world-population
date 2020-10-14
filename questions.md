@@ -9,7 +9,10 @@ Code used:
 The largest population size for Gabon in this dataset is 1.54526 million.
 
 Code used: 
-> SELECT population
-> FROM population_years
-> WHERE country = 'Gabon'
-> ORDER BY year DESC;
+> `SELECT population`
+
+> `FROM population_years`
+
+> `WHERE country = 'Gabon'`
+
+> `ORDER BY year DESC;`
