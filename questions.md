@@ -91,3 +91,30 @@ Code used:
 >`WHERE country LIKE '%Islands%'`
 
 >`ORDER BY country ASC;`
+
+## 6. What is the difference in population between 2000 and 2010 in Indonesia?
+The difference in population between 2000 and 2010 is 28.29173 million. Below is the dataset returned from this query:
+Year | Country | Population (millions)
+--- | --- | ---
+2000 | Indonesia | 214.67661
+2001 | Indonesia | 217.83628
+2002 | Indonesia | 220.97191
+2003 | Indonesia | 223.06967
+2004 | Indonesia | 226.00413
+2005 | Indonesia | 228.89575
+2006 | Indonesia | 231.82024
+2007 | Indonesia | 234.694
+2008 | Indonesia | 237.51236
+2009 | Indonesia | 240.27152
+2010 | Indonesia | 242.96834
+
+Code used:
+> `SELECT year, country, population`
+
+> `FROM population_years`
+
+> `WHERE country = 'Indonesia'`
+
+> `AND year BETWEEN 2000 AND 2010`
+
+> `ORDER BY year ASC;`
